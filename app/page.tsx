@@ -1,5 +1,5 @@
 'use client';
-import { ArrowRight, Github, Twitter } from 'lucide-react';
+import { ArrowRight, Github } from 'lucide-react'; // Removed Twitter import
 import { BACKGROUND_OPTIONS } from './components/background';
 import { Button } from '@/components/ui/button';
 import Playground from './components/playground';
@@ -26,19 +26,9 @@ export default function Home() {
           <header className="flex items-center justify-between py-8">
             <div />
             <nav className="flex gap-6">
+              
               <a
-                href="https://twitter.com/Ibelick"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex"
-              >
-                <Twitter
-                  className="h-6 w-6 text-neutral-800 transition-colors hover:text-neutral-600 dark:text-neutral-200 dark:hover:text-neutral-400"
-                  strokeWidth={1.5}
-                />
-              </a>
-              <a
-                href="https://github.com/ibelick/background-snippets"
+                href="https://github.com/2003swapnil"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex"
@@ -54,7 +44,7 @@ export default function Home() {
             <div className="relative mx-auto flex max-w-2xl flex-col items-center">
               <div className="mb-8 flex">
                 <a
-                  href="https://github.com/ibelick/background-snippets"
+                  href="https://github.com/2003swapnil"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex"
@@ -88,7 +78,7 @@ export default function Home() {
               </p>
               <div className="mt-10 flex gap-4">
                 <a
-                  href="https://github.com/ibelick/background-snippets"
+                  href="https://github.com/2003swapnil"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
@@ -126,17 +116,7 @@ export default function Home() {
           </div>
           <footer>
             <div className="flex items-center justify-center py-8">
-              <span className="text-sm text-neutral-800 dark:text-neutral-200">
-                Made by
-                <a
-                  href="https://twitter.com/Ibelick"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ml-1 text-neutral-950 dark:text-neutral-100"
-                >
-                  @Ibelick
-                </a>
-              </span>
+              {/* Removed "Made by" and Twitter link */}
             </div>
           </footer>
         </div>
